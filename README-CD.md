@@ -1,4 +1,13 @@
 # Semantic Versioning
+## Project Overview
+
+## How to Generate a tag in git
+
+## Behavior of Github workflow
+
+## Docker Hub Repo:
+- https://hub.docker.com/repository/docker/joeytimm/ceg3120-project4/general
+
 
 # Deployment
 ## How to install Docker on your instance.
@@ -27,3 +36,13 @@ echo \
 - And to verify docker is working you can run a quick sudo docker run hello-world
 
 ## Container Restart Script
+
+## How to install adnanh's webhook
+
+## Webhook task definition file
+
+## How to start Webhook
+
+## Auto-start webhook service on system boot
+
+## How to configure Github or Dockerhub to message the listener
