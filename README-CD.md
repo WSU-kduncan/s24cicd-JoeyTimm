@@ -2,6 +2,7 @@
 ## Project Overview
 
 ## How to Generate a tag in git
+- To generate a tag in git you can simply use the command "git tag -a vX.Y.Z -m "message" where X.Y.Z is your desired version number, and message is whatever you want to annotate your tag with.
 
 ## Behavior of Github workflow
 
@@ -38,6 +39,7 @@ echo \
 ## Container Restart Script
 
 ## How to install adnanh's webhook
+- To install adnanh's webhook it is as easy as "sudo apt-get install webhook"
 
 ## Webhook task definition file
 
