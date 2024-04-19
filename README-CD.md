@@ -1,7 +1,7 @@
 # Semantic Versioning
 ## Project Overview
 - There are two primary objectives for this lab. The first utilizes docker and github on your AWS instance. The goal is that you use semantic versioning with your repository so that when you push to your github repo, a workflow will see the version, create tags for it on docker, then build, push, and tag an image of your github repo to docker.
-- The second objective is to then
+- The second objective is to then use webhooks to detect when a new container is pushed to dockerhub. Once it is detected, it will stop that running container on local machines, remove it, pull this new container on dockerhub, and start running it
 
 ## How to Generate a tag in git
 - To generate a tag in git you can simply use the command "git tag -a vX.Y.Z -m "message" where X.Y.Z is your desired version number, and message is whatever you want to annotate your tag with.
