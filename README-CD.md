@@ -22,7 +22,7 @@
 for pkg in docker.io docker-doc docker-compose docker-compose-v2 podman-docker containerd runc; do sudo apt-get remove $pkg; done
 ```
 - Next you need should do a quick "sudo apt-get update"
-- After this you need to download Docker's official GPG key. Use the following commands in order:
+- After this you need to download Docker's official GPG key. Use the following commands in order: 
 - sudo apt-get install ca-certificates curl
 - sudo install -m 0755 -d /etc/apt/keyrings
 - sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
