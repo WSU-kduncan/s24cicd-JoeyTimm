@@ -8,4 +8,4 @@ docker remove sillyapp
 docker pull joeytimm/ceg3120-project4:latest
 
 #run this new image
-docker run -d -p 80:5000 --name sillyapp --restart always joeytimm/ceg3120-project4:latest
+docker run -d -p 80:80 --name sillyapp --restart always joeytimm/ceg3120-project4:latest

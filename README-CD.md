@@ -41,6 +41,7 @@ echo \
 - And to verify docker is working you can run a quick sudo docker run hello-world
 
 ## Container Restart Script
+- The container restart script is used that the user does not need to type in a bunch of commands everytime a new image is available on dockerhub. Although this restart script is not doing the notification that a new image is available, when run, this script will stop the current container, then remove it. After this it pulls the new container tagged latest, and runs it.
 
 ## How to install adnanh's webhook
 - To install adnanh's webhook it is as easy as "sudo apt-get install webhook"
