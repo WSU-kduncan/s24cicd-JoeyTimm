@@ -56,3 +56,4 @@ echo \
 - To get the webhook to auto start on system boot, 
 
 ## How to configure Github or Dockerhub to message the listener
+- To configure 
