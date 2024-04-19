@@ -47,7 +47,7 @@ echo \
 - To install adnanh's webhook it is as easy as "sudo apt-get install webhook"
 
 ## Webhook task definition file
-- The webhook task definition file
+- The webhook task definition file acts to 
 
 ## How to start Webhook
 
