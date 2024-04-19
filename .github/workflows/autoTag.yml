@@ -27,8 +27,7 @@ jobs:
             joeytimm/ceg3120-project4
           # generate Docker tags based on the following events/attributes
           tags: |
-            type=semver,pattern={{latest}}
-            type=semver,pattern={{major}}.{{minor}}.{{version}}
+            type=semver,pattern={{version}}
             type=semver,pattern={{major}}.{{minor}}
             type=semver,pattern={{major}}
       - name: Set up QEMU
