@@ -1,10 +1,14 @@
 # Semantic Versioning
 ## Project Overview
+- There are two primary objectives for this lab. The first utilizes docker and github on your AWS instance. The goal is that you use semantic versioning with your repository so that when you push to your github repo, a workflow will see the version, create tags for it on docker, then build, push, and tag an image of your github repo to docker.
+- The second objective is to then
 
 ## How to Generate a tag in git
 - To generate a tag in git you can simply use the command "git tag -a vX.Y.Z -m "message" where X.Y.Z is your desired version number, and message is whatever you want to annotate your tag with.
+- To get this tag to show up in github you will also need to use "git push origin vX.Y.Z", once again where X.Y.Z is your version
 
 ## Behavior of Github workflow
+- For this project, I decided to make a second workflow instead of just adding onto the original. The new workflow looks more complicated, but is quite simple. Essentially, whenever a pull request is made or a push to the main branch of the github repository, the workflow will make identical tags to those pushed to github but on dockerhub, and then log into dockerhub and build, push, and tag an image of what was pushed to the github repo.
 
 ## Docker Hub Repo:
 - https://hub.docker.com/repository/docker/joeytimm/ceg3120-project4/general
