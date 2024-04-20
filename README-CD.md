@@ -47,14 +47,15 @@ echo \
 - To install adnanh's webhook it is as easy as "sudo apt-get install webhook"
 
 ## Webhook task definition file
-- The webhook task definition file 
+- The webhook task definition file is essentially listening  
 - If someone were to use my setup, this file should be located in /home/ubuntu/s24cicd-JoeyTimm/deployment 
 
 ## How to start Webhook
 - To start a webhook, you can use the command "/path/to/webhook -hooks hooks.json -verbose"
 
 ## Auto-start webhook service on system boot
-- To get the webhook to auto start on system boot, 
+- To get the webhook to auto start on system boot, you must go to the webhook service file located in /lib/systemd/system. There are two alterations that need made. Both to the /etc/webhook.conf in the condition path exists line and the end of the execStart line. This path must be replaced by the path to your webhooks, which in my case was /home/ubuntu/s24cicd-JoeyTimm/deployment/hooks.json
+- After this, you will need to do 2 webhook restart commands. The first being "sudo systemctl daemon-reload" and the second being "sudo systemctl restart webhook.service" After these 2 commands are run, a quick systemctl status should reveal that webhook is now running in the background. This will now happen everytime your instance is booted up.
 
 ## How to configure Github or Dockerhub to message the listener
 - To configure 
