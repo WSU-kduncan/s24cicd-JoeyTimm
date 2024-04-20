@@ -42,15 +42,16 @@ echo \
 
 ## Container Restart Script
 - The container restart script is used that the user does not need to type in a bunch of commands everytime a new image is available on dockerhub. Although this restart script is not doing the notification that a new image is available, when run, this script will stop the current container, then remove it. After this it pulls the new container tagged latest, and runs it.
-
+- Although this file can be located anywhere, if somewhere were to use my setup, it should be located in /home/ubuntu/s24cicd-JoeyTimm/deployment
 ## How to install adnanh's webhook
 - To install adnanh's webhook it is as easy as "sudo apt-get install webhook"
 
 ## Webhook task definition file
-- The webhook task definition file  
+- The webhook task definition file 
+- If someone were to use my setup, this file should be located in /home/ubuntu/s24cicd-JoeyTimm/deployment 
 
 ## How to start Webhook
-- To start a webhook, 
+- To start a webhook, you can use the command "/path/to/webhook -hooks hooks.json -verbose"
 
 ## Auto-start webhook service on system boot
 - To get the webhook to auto start on system boot, 

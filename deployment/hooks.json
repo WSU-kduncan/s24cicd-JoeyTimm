@@ -1,0 +1,7 @@
+[
+	  {
+		      "id": "hook",
+		          "execute-command": "/home/ubuntu/s24cicd-JoeyTimm/deployment/restart.sh",
+			      "command-working-directory": "/home/ubuntu/s24cicd-JoeyTimm/deployment/webhook"
+			        }
+]
