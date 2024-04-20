@@ -47,7 +47,7 @@ echo \
 - To install adnanh's webhook it is as easy as "sudo apt-get install webhook"
 
 ## Webhook task definition file
-- The webhook task definition file is essentially listening  
+- The webhook task definition file is essentially listening on port 9000 for traffic. Once it recieves traffic, it will then execute the specified file, which in my case is the restart script using /home/ubuntu/s24cicd-JoeyTimm/deployment as its working directory. 
 - If someone were to use my setup, this file should be located in /home/ubuntu/s24cicd-JoeyTimm/deployment 
 
 ## How to start Webhook
@@ -58,4 +58,4 @@ echo \
 - After this, you will need to do 2 webhook restart commands. The first being "sudo systemctl daemon-reload" and the second being "sudo systemctl restart webhook.service" After these 2 commands are run, a quick systemctl status should reveal that webhook is now running in the background. This will now happen everytime your instance is booted up.
 
 ## How to configure Github or Dockerhub to message the listener
-- To configure 
+- For my project, I decided to use Dockerhub to message the listener. To do this, you must get the URL for your full webhook. Once this is done, go to the docker repo, click add webhook, give it a name, and paste your url into the url section.  
