@@ -58,4 +58,6 @@ echo \
 - After this, you will need to do 2 webhook restart commands. The first being "sudo systemctl daemon-reload" and the second being "sudo systemctl restart webhook.service" After these 2 commands are run, a quick systemctl status should reveal that webhook is now running in the background. This will now happen everytime your instance is booted up.
 
 ## How to configure Github or Dockerhub to message the listener
-- For my project, I decided to use Dockerhub to message the listener. To do this, you must get the URL for your full webhook. Once this is done, go to the docker repo, click add webhook, give it a name, and paste your url into the url section. And now when a new tag is pushed to docker, the webhook will trigger and run the script reloading your container with the updated container.  
+- For my project, I decided to use Dockerhub to message the listener. To do this, you must get the URL for your full webhook. Once this is done, go to the docker repo, click add webhook, give it a name, and paste your url into the url section. And now when a new tag is pushed to docker, the webhook will trigger and run the script reloading your container with the updated container.
+
+### My diagram image can be found as a jpg in this repo  
